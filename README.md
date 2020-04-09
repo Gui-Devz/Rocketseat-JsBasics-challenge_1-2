@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="YOUR_LOGO_URL" alt="YOUR_PROJECT_NAME" width="120">
+  <img src="https://pbs.twimg.com/profile_images/953595371875422210/0pWsfSSp_400x400.jpg" alt="Desafio 1-2" width="120">
 <br>
 <br>
     Learning the Basics

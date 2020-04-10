@@ -3,7 +3,7 @@
 const users = [
     {
         nome: "Carlos", 
-        tecnologias: ["HTML", "CSS"] 
+        tecnologias: ["HTML", "CSS", "JavaScript"] 
     },
     {
         nome: "Jasmine", 
@@ -11,7 +11,7 @@ const users = [
     },
     { 
         nome: "Tuane", 
-        tecnologias: ["HTML", "Node.js"] 
+        tecnologias: ["HTML", "Node.js", "React", "React Native"] 
     }
 ]
 
@@ -20,7 +20,7 @@ for (let i = 0; i < users.length; i++) {
     let tecnologias = "";
     for (let u = 0; u < users[i].tecnologias.length; u++) {
         tecnologias += users[i].tecnologias[u];
-        if (u < 1){
+        if (u < users[i].tecnologias.length - 1){
             tecnologias += ", ";
         }
     }

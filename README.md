@@ -10,3 +10,17 @@
 
 
 
+# SCENES
+
+- [x] Template String 
+
+- [x] Objects
+- [x] Arrays
+- [x] Estrutura de repetição
+- [x] Condicionais
+- [x] Booleanos
+
+
+* ``${nome da variavel}`` // Usando variáveis em Template Strings 
+* ` for( i=0, i<something, i++){}` // Estrutura de repetição 
+

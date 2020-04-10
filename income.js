@@ -14,7 +14,7 @@ const users = [
         income: [9.8, 120.3, 340.2, 45.3],
         expenses: [450.2, 29.9]
     }
-];
+]
 
 function calculateIncomeBalance(inc, exp) {
     const income = sumNumbers(inc)

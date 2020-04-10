@@ -1,23 +1,23 @@
-//Criando objetos e arrays
+//Creating objects and arrays
 
-const programador = {
-    nome: "Carlos",
-    idade: 32,
-    tecnologias: [
+const programmer = {
+    name: "Carlos",
+    age: 32,
+    technologies: [
         {
-            nome: 'C++', 
-            especialidade: 'Desktop' 
+            name: 'C++', 
+            specialties: 'Desktop' 
         },
         { 
-            nome: 'Python', 
-            especialidade: 'Data Science' 
+            name: 'Python', 
+            specialties: 'Data Science' 
         },
         { 
-            nome: 'JavaScript', 
-            especialidade: 'Web/Mobile' 
+            name: 'JavaScript', 
+            specialties: 'Web/Mobile' 
         }
     ]
 }
 
-console.log(`O usuário ${programador.nome} tem ${programador.idade} anos e usa a tecnologia ${programador.tecnologias[0].nome} com especialidade ${programador.tecnologias[0].especialidade}`);
+console.log(`The user ${programmer.name} is ${programmer.age} years old and works with ${programmer.technologies[0].name} focused in ${programmer.technologies[0].specialties}`)
 

@@ -3,42 +3,42 @@
 const users = [
     {
         name: "Carlos",
-        tecnologies: ["HTML", "CSS", "JavaScript"]
+        technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
         name: "Jasmine",
-        tecnologies: ["JavaScript", "CSS"]
+        technologies: ["JavaScript", "CSS"]
     },
     {
         name: "Tuane",
-        tecnologies: ["HTML", "Node.js", "React", "React Native", "CSS"]
+        technologies: ["HTML", "Node.js", "React", "React Native", "CSS"]
     }
 ]
 
 for (let i = 0; i < users.length; i++) {
-    let name = users[i].name;
-    let tecnologies = "";
+    let name = users[i].name
+    let technologies = ""
 
-    for (let u = 0; u < users[i].tecnologies.length; u++) {
-        tecnologies += users[i].tecnologies[u];
+    for (let u = 0; u < users[i].technologies.length; u++) {
+        technologies += users[i].technologies[u]
 
-        if (u < users[i].tecnologies.length - 1) {
-            tecnologies += ", ";
+        if (u < users[i].technologies.length - 1) {
+            technologies += ", "
         }
     }
     let userWorksWithCss = checkIfUsersUseCss(users[i])
 
     if (userWorksWithCss) {
-        console.log(`${name} works with ${tecnologies}`);
+        console.log(`${name} works with ${technologies}`)
     }
 }
 
 function checkIfUsersUseCss(users) {
-    for (let i = 0; i < users.tecnologies.length; i++) {
-        let tecsUsed = users.tecnologies[i];
+    for (let i = 0; i < users.technologies.length; i++) {
+        let tecsUsed = users.technologies[i]
 
         if (tecsUsed === "CSS") {
             return true
         }
-    } return false;
+    } return false
 }

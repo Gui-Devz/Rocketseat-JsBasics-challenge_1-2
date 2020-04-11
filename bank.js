@@ -32,6 +32,7 @@ function createTransaction(obj, pos){
 //Logs about transactions
 
 //Only two types accepted 'credit' or 'debit'
+//This fnc returns an object like { type: 'credit or debit', value: 60 }
 function getHigherTransactionByType(type, pos){
     if(type === "credit"){
         let value = 0
@@ -77,6 +78,7 @@ function getHigherTransactionByType(type, pos){
 function getAverageTransactionValue(pos){
     let sum = 0;
     let count = 0;
+    
     for (const transaction of users[pos].transactions) {
         sum += transaction.value
         count++
@@ -128,13 +130,13 @@ const transactions = [
 
 createTransaction(transactions, 0)
 
-console.log(users[0].balance) // 60
+console.log(users[0].balance) // 210
 
-console.log(getHigherTransactionByType("credit", 0)) // { type: 'credit', value: 120 }
+console.log(getHigherTransactionByType("credit", 0)) // { type: 'credit', value: 150 }
 
 console.log(getHigherTransactionByType("debit", 0)) // { type: 'debit', value: 80 }
 
-console.log(getAverageTransactionValue(0)) // 70
+console.log(getAverageTransactionValue(0)) // 86
 
 
-console.log(getTransactionsCount(0)) // { credit: 2, debit: 2 }
+console.log(getTransactionsCount(0)) // { credit: 3, debit: 2 }

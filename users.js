@@ -15,24 +15,6 @@ const users = [
     }
 ]
 
-for (let i = 0; i < users.length; i++) {
-    let name = users[i].name
-    let technologies = ""
-
-    for (let u = 0; u < users[i].technologies.length; u++) {
-        technologies += users[i].technologies[u]
-
-        if (u < users[i].technologies.length - 1) {
-            technologies += ", "
-        }
-    }
-    let userWorksWithCss = checkIfUsersUseCss(users[i])
-
-    if (userWorksWithCss) {
-        console.log(`${name} works with ${technologies}`)
-    }
-}
-
 function checkIfUsersUseCss(users) {
     for (let i = 0; i < users.technologies.length; i++) {
         let tecsUsed = users.technologies[i]
@@ -41,4 +23,28 @@ function checkIfUsersUseCss(users) {
             return true
         }
     } return false
+}
+
+//First defines where to put ", " and the " and " in sentence
+//Then shows all the users and technologies used by them
+for (let i = 0; i < users.length; i++) {
+    let name = users[i].name
+    let technologies = ""
+
+    for (let u = 0; u < users[i].technologies.length; u++) {
+        technologies += users[i].technologies[u]
+
+        if (u < users[i].technologies.length - 2) {
+            technologies += ", "
+            
+        } else if (u < users[i].technologies.length - 1) {
+            technologies += " and "
+        }
+    }
+
+    let userWorksWithCss = checkIfUsersUseCss(users[i])
+
+    if (userWorksWithCss) {
+        console.log(`${name} works with ${technologies}`)
+    }
 }

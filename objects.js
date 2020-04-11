@@ -10,6 +10,6 @@ const company = {
 }
 
 //console.log('The company '+ company.name +' is located at '+ 
-  //          company.address.street +', '+ company.address.number);
+//          company.address.street +', '+ company.address.number);
 
 console.log(`The company ${company.name} is located at ${company.address.street}, ${company.address.number}`);

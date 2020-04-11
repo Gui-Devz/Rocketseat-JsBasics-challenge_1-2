@@ -16,15 +16,6 @@ const users = [
     }
 ]
 
-function calculateIncomeBalance(inc, exp) {
-    const income = sumNumbers(inc)
-    const expenses = sumNumbers(exp)
-
-    const balance = income - expenses
-
-    return balance.toFixed(2)
-}
-
 function sumNumbers(numbers) {
     let sum = 0
 
@@ -32,6 +23,15 @@ function sumNumbers(numbers) {
         sum = sum + calculate
     }
     return sum
+}
+
+function calculateIncomeBalance(inc, exp) {
+    const income = sumNumbers(inc)
+    const expenses = sumNumbers(exp)
+
+    const balance = income - expenses
+
+    return balance.toFixed(2)
 }
 
 for (const user of users) {

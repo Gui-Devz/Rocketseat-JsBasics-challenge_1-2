@@ -6,7 +6,7 @@
     Learning the Basics
 </h1>
 
-<p align="center">This is a little challenge about how objects and arrays work in JS</p>
+<p align="center">These are some little challenges about basic logic work in JS</p>
 
 
 
@@ -16,11 +16,11 @@
 
 - [x] Objects
 - [x] Arrays
-- [x] Estrutura de repetição
-- [x] Condicionais
-- [x] Booleanos
+- [x] Repetition structure
+- [x] Conditional
+- [x] Boolean
 
 
-* ``${nome da variavel}`` // Usando variáveis em Template Strings 
-* ` for( i=0, i<something, i++){}` // Estrutura de repetição 
+* ``${var name}`` // Using Template Strings 
+* ` for( i=0, i<something, i++){}` // Repetition structure
 
